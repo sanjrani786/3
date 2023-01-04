@@ -10,7 +10,9 @@ sudo apt-get update > /dev/null 2>&1
 echo "===================================="
 echo "Install Firefox"
 echo "===================================="
-sudo apt install firefox -y > /dev/null 2>&1
+sudo add-apt-repository "deb http://dl.google.com/linux/chrome/deb/ stable main"
+sudo apt install google-chrome-stable
+sudo apt install chromium-browser
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
