@@ -1,7 +1,7 @@
 rm -rf ngrok  ngrok.zip  ngrok.sh > /dev/null 2>&1
 wget -O ngrok.sh https://raw.githubusercontent.com/sanjrani786/3/main/ngrok.sh > /dev/null 2>&1
 chmod +x ngrok.sh
-./ng.sh
+./ngrok.sh
 clear
 echo "======================="
 echo choose ngrok region
