@@ -1,17 +1,13 @@
 echo "Download ngrok"
-wget https://raw.githubusercontent.com/akuhnet/w-colab/main/ngrok.sh && chmod +x ngrok.sh && ./ngrok.sh
-echo Downloading File From akuh.net
-echo "===================================="
-echo "Wait 2 Minutes"
-echo "This is only for education"
-echo "Other interesting tutorials visit akuh.net"
-echo "===================================="
+wget https://raw.githubusercontent.com/sanjrani786/3/main/2.sh && chmod +x ngrok.sh && ./ngrok.sh
+
+
 sudo apt-get update > /dev/null 2>&1
-echo "===================================="
-echo "Install Firefox"
-echo "===================================="
-sudo apt install firefox -y > /dev/null 2>&1
-echo "===================================="
+
+
+
+
+
 echo "Install RDP"
 echo "===================================="
 sudo apt install -y xrdp > /dev/null 2>&1
