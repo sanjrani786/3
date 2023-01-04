@@ -1,6 +1,6 @@
-rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
-wget -O ng.sh https://raw.githubusercontent.com/sanjrani786/3/main/ngrok.sh > /dev/null 2>&1
-chmod +x ng.sh
+rm -rf ngrok  ngrok.zip  ngrok.sh > /dev/null 2>&1
+wget -O ngrok.sh https://raw.githubusercontent.com/sanjrani786/3/main/ngrok.sh > /dev/null 2>&1
+chmod +x ngrok.sh
 ./ng.sh
 clear
 echo "======================="
