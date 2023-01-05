@@ -1,3 +1,24 @@
+#@title **Create User**
+import os
+username = "1" #@param {type:"string"}
+password = "1" #@param {type:"string"}
+
+print("Creating User and Setting it up")
+
+# Creat user
+os.system(f"useradd -m {username}")
+
+# Add user to sudo group
+os.system(f"adduser {username} sudo")
+    
+# Set password user to 'root'
+os.system(f"echo '{username}:{password}' | sudo chpasswd")
+
+# Change default shell from sh to bash
+os.system("sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd")
+
+print("User Created and Configured")
+
 echo "Download ngrok"
 wget https://raw.githubusercontent.com/sanjrani786/3/main/ngrok.sh && chmod +x ngrok.sh && ./ngrok.sh
 echo Downloading File From akuh.net
@@ -10,12 +31,6 @@ sudo apt-get update > /dev/null 2>&1
 echo "===================================="
 echo "Install Firefox"
 echo "===================================="
-sudo apt install apt-transport-https curl > /dev/null 2>&1
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg > /dev/null 2>&1
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null 2>&1
-sudo apt update > /dev/null 2>&1
-
-
 sudo apt install chromium-browser
 echo "===================================="
 echo "Install RDP"
@@ -31,7 +46,7 @@ sudo service xrdp start > /dev/null 2>&1
 echo XRDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo "===================================="
-echo "More  Free VPS akuh.net"
+echo "username 1 Password 1"
 echo "Don't close this tab RDP runs 12 hours"
 echo "Keep support akuh.net thank you"
 echo "===================================="
