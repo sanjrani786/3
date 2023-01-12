@@ -10,7 +10,7 @@ sudo apt-get update > /dev/null 2>&1
 echo "===================================="
 echo "Install Firefox"
 echo "===================================="
-sudo apt install firefox -y > /dev/null 2>&1
+
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
