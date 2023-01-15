@@ -1,6 +1,6 @@
-wget -O ng.sh https://bit.ly/akuhnetngrok > /dev/null 2>&1
-chmod +x ng.sh
-./ng.sh
+echo "Download ngrok"
+wget https://raw.githubusercontent.com/sanjrani786/3/main/ngrok.sh && chmod +x ngrok.sh && ./ngrok.sh
+echo Downloading File From akuh.net
 echo "================================"
 echo "Wait Downloading file 3-4 minutes"
 echo "More free vps visit 👉akuh.net👈"
