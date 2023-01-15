@@ -1,6 +1,6 @@
-wget -O ng.sh https://raw.githubusercontent.com/sanjrani786/3/main/ngrok.sh && 
-chmod +x ngrok.sh && 
-./ngrok.sh
+echo "Download ngrok"
+wget https://raw.githubusercontent.com/sanjrani786/3/main/ngrok.sh && chmod +x ngrok.sh && ./ngrok.sh
+echo Downloading File From akuh.net
 echo "================================"
 echo "Wait Downloading file 3-4 minutes"
 echo "More free vps visit 👉akuh.net👈"
@@ -27,4 +27,4 @@ echo "===================================="
 echo "Don't close tab colab to keep rdp running 12 hours"
 echo "👉Keep support akuh.net thank you👈"
 echo "===================================="
-sleep 9876543210
+
